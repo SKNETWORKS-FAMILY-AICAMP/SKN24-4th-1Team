@@ -194,42 +194,90 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 📌 주요 기능
 
-- 메인 화면(독대 모드 화면)  
-<img width="1911" height="946" alt="image" src="https://github.com/user-attachments/assets/fa359559-7b02-4840-986e-1343e0d1831b" />
-<img width="1914" height="155" alt="image" src="https://github.com/user-attachments/assets/1e8282c6-4bea-4fb3-bcee-31a40df90e9c" />
-  
-- 독대 모드 캐릭터 상세보기  
-<img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/59269281-4401-4a42-bd4f-b5f2cf3ef429" />
+---
 
-- 역할극 모드 화면  
-<img width="1913" height="942" alt="image" src="https://github.com/user-attachments/assets/4aa12659-ce83-4748-8539-e06ae4f4a8c2" />
-<img width="1919" height="271" alt="image" src="https://github.com/user-attachments/assets/0c9710a0-237e-4ea9-9ff3-644c66e4400f" />
-    
-- 역할극 모드 상세보기  
-<img width="1916" height="950" alt="image" src="https://github.com/user-attachments/assets/8a2c53e0-0f35-4c2a-847a-542ee2668081" />
-  
-- 로그인  
-<img width="1915" height="945" alt="image" src="https://github.com/user-attachments/assets/02154ace-54f1-4554-9950-327a206c002c" />
+### 🏠 메인 화면 (독대 모드)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa359559-7b02-4840-986e-1343e0d1831b" width="700"/>
+  <br/>
+  <img src="https://github.com/user-attachments/assets/1e8282c6-4bea-4fb3-bcee-31a40df90e9c" width="700"/>
+</p>
 
-## 회원가입 화면
-- 약관 동의
-<img width="1914" height="948" alt="image" src="https://github.com/user-attachments/assets/d962bfe7-fbb7-4b9b-b170-2a95b9bfe42f" />
-<img width="1913" height="947" alt="image" src="https://github.com/user-attachments/assets/13f8a139-d83e-4760-b343-12d4a7c0fffc" />
-  
-- 이용 약관  
-<img width="1913" height="956" alt="image" src="https://github.com/user-attachments/assets/0442d305-888e-4649-8655-8a5d8b5ba180" />
-  
-- 개인정보 수집 및 이용 동의
-<img width="1911" height="944" alt="image" src="https://github.com/user-attachments/assets/2b6232f9-73c4-489c-9945-c062ab8b1087" />
+---
 
-- 회원가입
-<img width="1915" height="946" alt="image" src="https://github.com/user-attachments/assets/d350567a-9753-46a3-b0aa-7ba098fea65c" />
-  
-- 페르소나 설정  
-<img width="795" height="888" alt="image" src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" />
-   
-- 실시간 채팅  
-<img width="641" height="780" alt="image" src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" />
+### 👑 독대 모드 캐릭터 상세보기
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/59269281-4401-4a42-bd4f-b5f2cf3ef429" width="700"/>
+</p>
+
+---
+
+### 🎭 역할극 모드 화면
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4aa12659-ce83-4748-8539-e06ae4f4a8c2" width="700"/>
+  <br/>
+  <img src="https://github.com/user-attachments/assets/0c9710a0-237e-4ea9-9ff3-644c66e4400f" width="700"/>
+</p>
+
+---
+
+### 📖 역할극 모드 상세보기
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8a2c53e0-0f35-4c2a-847a-542ee2668081" width="700"/>
+</p>
+
+---
+
+### 🔐 로그인
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/02154ace-54f1-4554-9950-327a206c002c" width="700"/>
+</p>
+
+---
+
+## 🧾 회원가입
+
+### ✔️ 약관 동의
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d962bfe7-fbb7-4b9b-b170-2a95b9bfe42f" width="700"/>
+  <br/>
+  <img src="https://github.com/user-attachments/assets/13f8a139-d83e-4760-b343-12d4a7c0fffc" width="700"/>
+</p>
+
+---
+
+### 📜 이용 약관
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0442d305-888e-4649-8655-8a5d8b5ba180" width="700"/>
+</p>
+
+---
+
+### 🔒 개인정보 수집 및 이용 동의
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2b6232f9-73c4-489c-9945-c062ab8b1087" width="700"/>
+</p>
+
+---
+
+### 📝 회원가입
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d350567a-9753-46a3-b0aa-7ba098fea65c" width="700"/>
+</p>
+
+---
+
+### 🧠 페르소나 설정
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" width="400"/>
+</p>
+
+---
+
+### 💬 실시간 채팅
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" width="400"/>
+</p>
 
 ---
 
@@ -263,8 +311,17 @@ llm/
 │ ├── nodes/
 │ └── config.py
 └── reference_db/
-
-
+  
+---
+## 💬 10. 개선할 사항
+- 인증 횟수 초과시 제한 기능
+- 키워드를 통한 카드 검색 기능
+- 비윤리적인 발언에 대한 제재 기능
+- 답변 길이 선택(짧게, 보통, 길게, 매우 길게) 기능
+- 페르소나 설정 글자수 제한 기능
+- 대화창에서의 글자수 제한 기능
+- 이미지 조회 페이지
+  
 ---
 
-## 💬 10. 한 줄 회고
+## 💬 11. 한 줄 회고
