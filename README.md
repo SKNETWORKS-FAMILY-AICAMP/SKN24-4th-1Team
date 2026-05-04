@@ -97,7 +97,7 @@
 
 ## 🧩 4. 시스템 구성도
 
-<img width="1603" height="981" alt="image" src="https://github.com/user-attachments/assets/48084063-58e2-4a10-89c7-81738e692303" />
+<img width="1604" height="981" alt="image" src="https://github.com/user-attachments/assets/7f058530-a561-4463-8467-a78b9a76dea7" />
   
 ### 🔁 처리 흐름
 
@@ -294,39 +294,7 @@ Amazon RDS(MySQL)에 저장한다.
 </p>
 
 ---
-
-### 📌 프로젝트 구조
-
-
-mongyurok/
-├── apps/
-│ ├── auths/
-│ ├── users/
-│ ├── characters/
-│ └── scenarios/
-├── templates/
-├── static/
-├── nginx/
-├── Dockerfile
-├── docker-compose.yml
-└── manage.py
-
-
----
-
-### 📌 LLM 구조
-
-
-llm/
-├── main.py
-├── src/
-│ ├── graph.py
-│ ├── state.py
-│ ├── nodes/
-│ └── config.py
-└── reference_db/
   
----
 ## 💬 10. 개선할 사항
 - 인증 횟수 초과시 제한 기능
 - 키워드를 통한 카드 검색 기능
