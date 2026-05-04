@@ -32,7 +32,7 @@
 
 ---
 
-### 📚 프로젝트 필요성  
+### 📚 프로젝트 배경  
   
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/03bb7129-01b8-41bc-8ce6-3f04fa8ede8f" />
