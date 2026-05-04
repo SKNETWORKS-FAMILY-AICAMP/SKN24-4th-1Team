@@ -96,8 +96,8 @@
 |  | Gunicorn |
 
 ## 🧩 4. 시스템 구성도
-  
-<img width="1603" height="981" alt="image" src="https://github.com/user-attachments/assets/52abc31f-c12d-408b-8a56-e674b8b2d2b6" />
+
+<img width="1603" height="981" alt="image" src="https://github.com/user-attachments/assets/48084063-58e2-4a10-89c7-81738e692303" />
   
 ### 🔁 처리 흐름
 
