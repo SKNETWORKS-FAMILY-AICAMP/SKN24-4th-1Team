@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}채팅방{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/character/chat-room.css' %}">
+<style>
+    /* 모달 기본 스타일 */
+    .modal-overlay {
+        display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.7); z-index: 2000; justify-content: center; align-items: center;
+    }
+    .modal-content {
+        background: #fdfaf4; padding: 30px; border-radius: 12px; width: 450px; color: #333;
+    }
+    .modal-content input, .modal-content select, .modal-content textarea {
+        width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- 1. 페르소나 설정 모달 -->
+<div id="persona-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h2 style="text-align: center; margin-bottom: 20px;">페르소나 설정</h2>
+        <label>성격</label>
+        <input type="text" id="p-personality" placeholder="예: 모든 행동에 민감하게 반응하는 성격">
+        
+        <label>신분</label>
+        <select id="p-identity">
+            <option value="farmer">농부</option>
+            <option value="scholar">유생</option>
+            <option value="official">관료</option>
+            <option value="general">장수</option>
+            <option value="merchant">상인</option>
+            <option value="physician">의원</option>
+            <option value="eunuch">내관</option>
+        </select>
+
+        <label>가치관</label>
+        <textarea id="p-values" placeholder="예: 밥 먹는 것이 최고고 모든 문제는 밥으로 해결 가능하다." style="height: 80px;"></textarea>
+
+        <label>최초 상황</label>
+        <textarea id="p-scene" placeholder="예: 밥 먹다가 왕에게 갑자기 호출됐다." style="height: 80px;"></textarea>
+
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button onclick="history.back()" style="flex: 1; padding: 12px; border: none; border-radius: 5px; cursor: pointer;">취소</button>
+            <button id="persona-submit-btn" style="flex: 2; padding: 12px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">적용하기</button>
+        </div>
+    </div>
+</div>
+
+<section class="char-room-group">
+    <!-- 1. 왼쪽: 메시지 영역 -->
+    <div class="char-room-message">
+        <div>
+            {% csrf_token %}
+            <div class="ai-notice">
+                <p>답변은 모두 AI가 생성한 내용이에요</p>
+            </div>
+
+            {% for msg in messages %}
+                {% if msg.type == "character" %}
+                    {% include 'characters/components/char-box.html' %}
+                {% elif msg.type == "situation" %}
+                    {% include 'characters/components/situ-box.html' %}
+                {% elif msg.type == "user" %}
+                    {% include 'characters/components/user-box.html' %}
+                {% endif %}
+            {% endfor %}
+            </div> 
+        </div>
+            <div class="input-wrapper">
+        <div class="input-container">
+            <input type="text" id="chat-input" placeholder="메시지를 입력하세요..." maxlength="300">
+            <button id="send-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 배경 원 (검정색) -->
+                    <circle cx="12" cy="12" r="10" fill="black"/>
+                    <!-- 위로 향하는 화살표 (흰색) -->
+                    <path d="M12 7V17M12 7L8 11M12 7L16 11" 
+                        stroke="white" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="char-count"><span id="current-count">0</span>/300자</div>
+    </div>
+</section>
+    <div class="char-room-profile">
+        <div class="char-room-profile-img">
+            <img src="{{ room.character.img_url.url }}" alt="">
+        </div>
+        <div class="char-name">{{ room.character.kor_name }}({{ room.character.hanja_name }})</div>
+        <div class="user-info">
+            <div class='user-line'></div>
+            <p class="user-title">페르소나</p>
+            <img src="{{ user.img_url.url }}" alt="">
+            <div>
+                <p class="char-title">이름</p>
+                <p class="char-con">{{user.nickname}}</p>
+            </div>
+            <p class="char-title">신분</p>
+            <p id="profile-identity" class="char-con">{{ room.persona.get_identity_display }}</p>
+            <p class="char-title">성격</p>
+            <p id="profile-personality" class="char-con">{{ room.persona.personality }}</p>
+            <p class="char-title">가치관</p>
+            <p id="profile-values" class="char-con">{{ room.persona.values }}</p>
+        </div>
+    </div> <!-- .char-room-profile 끝 -->
+<script>
+function appendMessage(container, type, content, nickname) {
+    const msgDiv = document.createElement('div');
+
+    if (type === 'user') {
+        msgDiv.className = 'user-box-group';
+        msgDiv.innerHTML = `
+        <div class="user-box-mes">
+            <p class="user-nickname">${nickname}</p>
+            <div class="user-bubble">${content}</div>
+        </div>`;
+    } else if (type === 'character' || type === 'CHARACTER') {
+        msgDiv.className = 'char-box-group';
+        msgDiv.innerHTML = `
+            <div class="char-img-wrap"></div>
+            <div class="char-box-mes">
+                <p class="char-nickname">${nickname}</p>
+                <div class="char-bubble">${content}</div>
+            </div>`;
+    } else if (type === 'situation') {
+        msgDiv.className = 'situ';
+        msgDiv.innerHTML = `<div class="situ-mes"><div>"${content}"</div></div>`;
+    }
+
+    container.appendChild(msgDiv);
+    container.scrollTop = container.scrollHeight;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const personaSubmitBtn = document.getElementById('persona-submit-btn');
+    const sendBtn = document.getElementById('send-btn');
+    const chatInput = document.getElementById('chat-input');
+    const personaModal = document.getElementById('persona-modal');
+    const messageContainer = document.querySelector('.char-room-message > div');
+    const currentCount = document.getElementById('current-count');
+
+    const userNickname = "{{ user.nickname }}";
+    const characterName = "{{ room.character.kor_name }}";
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+    const DEFAULT_PERSONA = {
+        personality: "모든 행동에 민감하게 반응하는 성격",
+        identity: "farmer",
+        values: "밥 먹는 것이 최고고 모든 문제는 밥으로 해결 가능하다.",
+        first_scene: "밥 먹다가 왕에게 갑자기 호출됐다."
+    };
+    const currentPersona = {
+        personality: "{{ room.persona.personality|escapejs }}",
+        identity: "{{ room.persona.identity }}",
+        values: "{{ room.persona.values|escapejs }}",
+        first_scene: "{{ room.persona.first_scene|escapejs }}"
+    };
+
+    const messageCount = Number("{{ messages|length }}");
+    const isDefaultPersona =
+        currentPersona.personality === DEFAULT_PERSONA.personality &&
+        currentPersona.identity === DEFAULT_PERSONA.identity &&
+        currentPersona.values === DEFAULT_PERSONA.values &&
+        currentPersona.first_scene === DEFAULT_PERSONA.first_scene;
+
+    if (isDefaultPersona && messageCount <= 1) {
+        personaModal.style.display = 'flex';
+    }
+
+    // 페르소나 설정
+    personaSubmitBtn.addEventListener('click', async () => {
+        const fd = new FormData();
+        fd.append('csrfmiddlewaretoken', csrftoken);
+        fd.append('personality', document.getElementById('p-personality').value);
+        fd.append('identity', document.getElementById('p-identity').value);
+        fd.append('values', document.getElementById('p-values').value);
+        fd.append('first_scene', document.getElementById('p-scene').value);
+
+        try {
+            const res = await fetch(`/characters/{{ room.character.id }}/persona/`, {
+                method: 'POST',
+                body: fd
+            });
+            const data = await res.json();
+
+            if (data.status === 'success') {
+                personaModal.style.display = 'none';
+                appendMessage(messageContainer, 'situation', data.first_scene, '');
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    });
+
+    // 메시지 전송
+    sendBtn.addEventListener('click', async () => {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        appendMessage(messageContainer, 'user', message, userNickname || '나');
+        chatInput.value = '';
+        currentCount.textContent = '0';
+
+        try {
+            const response = await fetch("{% url 'characters:send_message' room.id %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': csrftoken
+                },
+                body: new URLSearchParams({ message })
+            });
+
+            if (!response.ok) throw new Error("서버 응답 오류");
+
+            const data = await response.json();
+            if (data.status === 'success') {
+                appendMessage(messageContainer, 'character', data.character_message.content, characterName || 'AI');
+            }
+        } catch (e) {
+            console.error("전송 중 오류 발생:", e);
+            alert("메시지 전송에 실패했습니다.");
+        }
+    });
+
+    chatInput.addEventListener('keypress', e => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sendBtn.click();
+        }
+    });
+
+    chatInput.addEventListener('input', () => {
+        currentCount.textContent = chatInput.value.length;
+    });
+});
+</script>
+{% endblock %}
