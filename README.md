@@ -276,7 +276,7 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 🧠 역할극 모드 페르소나 설정
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" width="400"/>
+  <img src="https://github.com/user-attachments/assets/1a7411d1-5aee-4840-ae59-8a256ff92292" width="400"/>
 </p>
 
 ---
@@ -290,7 +290,11 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 💬 역할극 모드 실시간 채팅
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" width="400"/>
+  <img src="https://github.com/user-attachments/assets/c7366357-4ca7-4743-a806-98e87634c63e" width="400"/>
+  <br>
+  <img src="https://github.com/user-attachments/assets/77f97cc1-c3ee-47ee-b0fc-18b90c89ede9" width="400"/>
+  <br>
+  <img src="https://github.com/user-attachments/assets/fd56054e-704a-4ab8-98ac-faecd817a640" width="400"/>
 </p>
 
 ---
