@@ -46,6 +46,11 @@ https://www.mk.co.kr/news/it/11983531
   
 AI 챗봇 시장에서는 정보 검색형 서비스를 넘어, 캐릭터와 대화하며 정서적 교감과 몰입을 경험하는 형태가 확산되고 있다. 실제로 2026년 2월 기준 한국인이 가장 오래 사용한 AI 챗봇 앱은 캐릭터 대화 서비스 ‘제타’로 나타났다. 이러한 흐름은 이용자들이 상호작용성과 서사성을 갖춘 AI 경험에 익숙해지고 있음을 보여준다.
 
+<img width="534" height="491" alt="image" src="https://github.com/user-attachments/assets/c998bd6d-a7e7-4708-bc78-5be3b9754642" /><img width="1915" height="944" alt="image" src="https://github.com/user-attachments/assets/8e1d0e51-27fd-429f-a5f8-642623c98f69" />
+
+
+
+
 ---
 
 ### 🎯 프로젝트 목표
