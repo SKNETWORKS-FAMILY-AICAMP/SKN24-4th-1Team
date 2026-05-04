@@ -77,8 +77,6 @@ https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050
 
 ## 🛠️ 3. 기술 스택
 
-## 🛠️ Tech Stack
-
 | 구분 | 기술 |
 |---|---|
 | 💻 Backend | Django |
@@ -97,12 +95,30 @@ https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050
 |  | Gunicorn |
 
 ## 🧩 4. 시스템 구성도
-
   
 (이미지)
+  
+---
+
+## 📋 5. 요구사항 정의서
+
+📌 (이미지 삽입)
+  
+주요 기능:  
+  
+- 회원가입 / 로그인    
+- 캐릭터 선택  
+- 페르소나 설정  
+- 채팅 기능  
+- 채팅 기록 저장  
+- 비동기 메시지 처리  
 
 ---
 
+## 🖥️ 6. 화면설계서
+  
+<img width="1603" height="981" alt="image" src="https://github.com/user-attachments/assets/52abc31f-c12d-408b-8a56-e674b8b2d2b6" />
+  
 ### 🔁 처리 흐름
 
 사용자 입력  
@@ -150,27 +166,6 @@ emotion (감정 분석)
 
 → 사용자 출력  
   
----
-
-## 📋 5. 요구사항 정의서
-
-📌 (이미지 삽입)
-  
-주요 기능:  
-  
-- 회원가입 / 로그인    
-- 캐릭터 선택  
-- 페르소나 설정  
-- 채팅 기능  
-- 채팅 기록 저장  
-- 비동기 메시지 처리  
-
----
-
-## 🖥️ 6. 화면설계서
-
-(이미지)
-
 ---
 
 ## 📊 7. WBS
