@@ -267,14 +267,28 @@ Amazon RDS(MySQL)에 저장한다.
 
 ---
 
-### 🧠 페르소나 설정
+### 🧠 독대 모드 페르소나 설정
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" width="400"/>
 </p>
 
 ---
 
-### 💬 실시간 채팅
+### 🧠 역할극 모드 페르소나 설정
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" width="400"/>
+</p>
+
+---
+
+### 💬 독대 모드 실시간 채팅
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" width="400"/>
+</p>
+
+---
+
+### 💬 역할극 모드 실시간 채팅
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" width="400"/>
 </p>
