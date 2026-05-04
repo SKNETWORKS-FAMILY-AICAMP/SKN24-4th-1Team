@@ -121,50 +121,49 @@ https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050
   
 ### 🔁 처리 흐름
 
-사용자 입력  
-→ Django View (모드 판별: 독대 / 시나리오)  
-→ 사용자 정보 조회 (USER_INFO)
+1. 사용자 요청  
+사용자가 웹/모바일에서 메시지를 입력하면 HTTP/HTTPS 요청이 발생한다.
 
-→ FastAPI (/chat)
+2. AWS EC2 (Docker 환경 진입)  
+요청은 AWS EC2 내부 Docker 컨테이너로 전달된다.  
+→ Nginx → Gunicorn → Django 순으로 처리된다.
 
-→ LangGraph 실행  
-emotion (감정 분석)  
-→ intent (의도 분석)  
-→ retrieve (RAG 검색)
+3. Nginx (Reverse Proxy)  
+클라이언트 요청을 수신하고 Django 서버로 라우팅한다.
 
----
+4. Gunicorn (WSGI 서버)  
+Django 애플리케이션을 실행하며 요청을 처리한다.
 
-#### 🧍 독대 모드 (1:1 캐릭터 대화)
+5. Django (Backend)  
+- 사용자 인증 및 요청 처리  
+- 대화방 및 모드 관리 (독대 / 스토리)  
+- 메시지 전처리  
+- FastAPI (/chat) 호출  
 
-→ 대화방 정보 조회 (CHAR_ROOM_SETTINGS)  
-→ 캐릭터 정보 조회 (CHAR_MODE_INFO)  
-→ 페르소나 정보 조회 (PERSONA)
+6. 모드 분기  
+Django에서 요청을 분석하여 모드를 결정한다.
 
-→ king (왕 응답 생성)  
-→ scene (상황/배경 생성)
+- 독대 모드 → EXAONE LLM 사용  
+- 스토리 모드 → OpenAI GPT 사용  
 
-→ 응답 반환  
-→ 메시지 저장 (CHAR_MESSAGES)  
-→ 상태 업데이트 (king_state 등)  
+7. LLM 응답 생성  
+각 모드에 따라 LLM이 응답을 생성한다.  
+- 독대 모드: 단일 캐릭터 기반 응답  
+- 스토리 모드: 다중 캐릭터 및 스토리 진행 응답  
 
-→ 사용자 출력  
+8. RAG 검색 (필요 시)  
+LLM은 ChromaDB(Vector DB)와 연결되어  
+유사도 기반 문서 검색을 수행하고 응답에 반영한다.
 
----
+9. 데이터 저장  
+Django는 생성된 응답과 사용자 메시지를  
+Amazon RDS(MySQL)에 저장한다.  
 
-#### 🎭 시나리오 모드 (스토리 기반 다중 캐릭터)
+10. 응답 반환  
+생성된 결과는 Django → Gunicorn → Nginx → 사용자 순으로 전달된다.
 
-→ 대화방 정보 조회 (STORY_ROOM_SETTINGS)  
-→ 스토리 정보 조회 (STORY_MODE_INFO)  
-→ 등장인물 조회 (STORY_CHAR_INFO)
-
-→ character (다중 캐릭터 응답 생성)  
-→ scene (스토리 진행 및 장면 생성)
-
-→ 응답 반환  
-→ 메시지 저장 (STORY_MESSAGES)  
-→ 상태 업데이트 (current_chapter, flags 등)
-
-→ 사용자 출력  
+11. 사용자 출력  
+최종적으로 웹/모바일 화면에 응답이 출력된다.
   
 ---
 
