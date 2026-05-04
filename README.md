@@ -78,34 +78,24 @@ https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050
 
 ## 🛠️ 3. 기술 스택
 
-### 💻 Backend
-- Django  
-- FastAPI  
+## 🛠️ Tech Stack
 
-### 🧠 AI / LLM
-- EXAONE-3.5-2.4B-Instruct  
-- LangChain  
-- LangGraph  
-
-### 📚 Vector DB
-- ChromaDB  
-- HuggingFace Embedding (KURE-v1)  
-
-### 🗄️ Database
-- MySQL (RDS)  
-- ChromaDB  
-
-### ☁️ Infra
-- AWS EC2  
-- AWS RDS  
-- RunPod  
-
-### 🐳 DevOps
-- Docker  
-- Nginx  
-- Gunicorn  
-
----
+| 구분 | 기술 |
+|---|---|
+| 💻 Backend | Django |
+|  | FastAPI |
+| 🧠 AI / LLM | EXAONE-3.5-2.4B-Instruct |
+|  | LangChain |
+|  | LangGraph |
+| 📚 Retrieval | ChromaDB |
+|  | HuggingFace Embedding (KURE-v1) |
+| 🗄️ Database | MySQL (RDS) |
+| ☁️ Infra | AWS EC2 |
+|  | AWS RDS |
+|  | RunPod |
+| 🐳 DevOps | Docker |
+|  | Nginx |
+|  | Gunicorn |
 
 ## 🧩 4. 시스템 구성도
 
