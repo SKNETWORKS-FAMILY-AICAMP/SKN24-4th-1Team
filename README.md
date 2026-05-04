@@ -134,6 +134,7 @@ Django에서 요청을 분석하여 모드를 결정한다.
 LLM은 ChromaDB(Vector DB)와 연결되어  
 유사도 기반 문서 검색을 수행하고 응답에 반영한다.
 
+
 9. 데이터 저장  
 Django는 생성된 응답과 사용자 메시지를  
 Amazon RDS(MySQL)에 저장한다.  
@@ -148,7 +149,9 @@ Amazon RDS(MySQL)에 저장한다.
 
 ## 📋 5. 요구사항 정의서
 
-📌 (이미지 삽입)
+<img width="1753" height="1240" alt="image" src="https://github.com/user-attachments/assets/63c240f8-f2aa-46f7-9e0a-f3d37a0f944f" />
+
+  
   
 주요 기능:  
   
