@@ -156,8 +156,9 @@ Amazon RDS(MySQL)에 저장한다.
   
 ---
 
-## 🖥️ 6. 화면설계서
+## 🖥️ 6. 화면설계서  
   
+- [화면설계서](docs/scr_design.pdf)  
 
   
 ---
@@ -283,7 +284,8 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 💬 독대 모드 실시간 채팅
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" width="400"/>
+  <img src="https://github.com/user-attachments/assets/70d6c6d4-c77c-4752-8300-e5b101d9f1c8" width="400"/>
+  <img src="https://github.com/user-attachments/assets/6773d00f-008f-4387-9aa0-d32b8bbf573e" width="400"/>
 </p>
 
 ---
@@ -311,3 +313,8 @@ Amazon RDS(MySQL)에 저장한다.
 ---
 
 ## 💬 11. 한 줄 회고
+- 나혜린 : 
+- 류지우 : 
+- 김현수 : 
+- 황인규 : Django 구조에서는 AI 서버와 메시지를 주고받는 요청/응답 형식을 정의하였고, RunPod에서는 모델을 배포하여 실제 추론이 가능하도록 구성하였다. 이 과정을 통해 Django와 RunPod 간의 연결 구조와 데이터 흐름을 명확히 이해할 수 있었다. 또한 ERD 설계를 진행하며 변수(필드) 명의 통일성이 시스템 전반의 일관성과 유지보수에 중요한 요소임을 다시 한번 인식하게 되었다.  
+- 정준하 : 
