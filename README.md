@@ -32,10 +32,11 @@
 
 ---
 
-### 📚 프로젝트 필요성
-
+### 📚 프로젝트 필요성  
+  
+<p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/03bb7129-01b8-41bc-8ce6-3f04fa8ede8f" />
-</br>
+</p>  
 https://www.mk.co.kr/news/it/11983531  
   
 최근 AI 챗봇 시장에서는 캐릭터 기반 서비스가 높은 이용률을 보이고 있다. 특히 캐릭터와의 대화를 중심으로 한 서비스가 높은 사용 시간을 기록하고 있다는 점은, 챗봇이 단순한 정보 검색 도구를 넘어 감정적 교감과 몰입형 경험을 제공하는 서비스로 확장되고 있음을 보여준다. 
