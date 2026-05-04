@@ -1,4 +1,4 @@
-<img width="1911" height="946" alt="image" src="https://github.com/user-attachments/assets/f411b581-684e-406c-8b68-2a183e42f3f3" /># 👑 몽유록 (Mongyurok)
+# 👑 몽유록 (Mongyurok)
 
 > 조선 왕과 대화하며 역사를 배우는 캐릭터형 AI 챗봇
 
@@ -194,21 +194,39 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 📌 주요 기능
 
-- 메인 화면(독대 모드 화면)
+- 메인 화면(독대 모드 화면)  
 <img width="1911" height="946" alt="image" src="https://github.com/user-attachments/assets/fa359559-7b02-4840-986e-1343e0d1831b" />
-<img width="1909" height="674" alt="image" src="https://github.com/user-attachments/assets/d4a32455-a10a-4bc4-8e4a-85d44ed27fd3" />
-
-- 독대 모드 캐릭터 상세보기
-
-- 스토리 모드 화면
-
-- 스토리 모드 상세보기
+<img width="1914" height="155" alt="image" src="https://github.com/user-attachments/assets/1e8282c6-4bea-4fb3-bcee-31a40df90e9c" />
   
-- 로그인
+- 독대 모드 캐릭터 상세보기  
+<img width="1913" height="946" alt="image" src="https://github.com/user-attachments/assets/59269281-4401-4a42-bd4f-b5f2cf3ef429" />
+
+- 역할극 모드 화면  
+<img width="1913" height="942" alt="image" src="https://github.com/user-attachments/assets/4aa12659-ce83-4748-8539-e06ae4f4a8c2" />
+<img width="1919" height="271" alt="image" src="https://github.com/user-attachments/assets/0c9710a0-237e-4ea9-9ff3-644c66e4400f" />
+    
+- 역할극 모드 상세보기  
+<img width="1916" height="950" alt="image" src="https://github.com/user-attachments/assets/8a2c53e0-0f35-4c2a-847a-542ee2668081" />
   
+- 로그인  
+<img width="1915" height="945" alt="image" src="https://github.com/user-attachments/assets/02154ace-54f1-4554-9950-327a206c002c" />
+
+## 회원가입 화면
+- 약관 동의
+<img width="1914" height="948" alt="image" src="https://github.com/user-attachments/assets/d962bfe7-fbb7-4b9b-b170-2a95b9bfe42f" />
+<img width="1913" height="947" alt="image" src="https://github.com/user-attachments/assets/13f8a139-d83e-4760-b343-12d4a7c0fffc" />
+  
+- 이용 약관  
+<img width="1913" height="956" alt="image" src="https://github.com/user-attachments/assets/0442d305-888e-4649-8655-8a5d8b5ba180" />
+  
+- 개인정보 수집 및 이용 동의
+<img width="1911" height="944" alt="image" src="https://github.com/user-attachments/assets/2b6232f9-73c4-489c-9945-c062ab8b1087" />
+
 - 회원가입
+<img width="1915" height="946" alt="image" src="https://github.com/user-attachments/assets/d350567a-9753-46a3-b0aa-7ba098fea65c" />
   
 - 페르소나 설정
+
    
 - 실시간 채팅  
 
