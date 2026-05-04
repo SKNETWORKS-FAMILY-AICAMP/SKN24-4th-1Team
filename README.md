@@ -175,7 +175,8 @@ emotion (감정 분석)
 
 ## 📊 7. WBS
 
-<img width="1330" height="640" alt="image" src="https://github.com/user-attachments/assets/1412deb3-178c-4aab-b55c-62f5413ca2a8" />
+<img width="1303" height="601" alt="wbs" src="https://github.com/user-attachments/assets/30d29838-ae8b-4cc1-8177-67c2c6e424f2" />
+" />
 
 ---
 
