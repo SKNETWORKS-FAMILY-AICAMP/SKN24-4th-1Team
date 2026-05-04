@@ -149,8 +149,9 @@ Amazon RDS(MySQL)에 저장한다.
 
 ## 📋 5. 요구사항 정의서
 
-<img width="1753" height="1240" alt="image" src="https://github.com/user-attachments/assets/63c240f8-f2aa-46f7-9e0a-f3d37a0f944f" />
-- [요구사항 정의서](docs/req_1.pdf)
+<img width="1753" height="1240" alt="image" src="https://github.com/user-attachments/assets/63c240f8-f2aa-46f7-9e0a-f3d37a0f944f" />  
+  
+- [요구사항 정의서](docs/req_1.pdf)  
   
   
 주요 기능:  
