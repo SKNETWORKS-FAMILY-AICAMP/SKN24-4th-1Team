@@ -107,33 +107,49 @@ https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050
 
 사용자 입력  
 → Django View (모드 판별: 독대 / 시나리오)  
+→ 사용자 정보 조회 (USER_INFO)
+
 → FastAPI (/chat)
 
-→ LangGraph 실행
-
-#### 🧍 독대 모드 (1:1 캐릭터 대화)
+→ LangGraph 실행  
 emotion (감정 분석)  
 → intent (의도 분석)  
-→ retrieve (RAG 검색)  
+→ retrieve (RAG 검색)
+
+---
+
+#### 🧍 독대 모드 (1:1 캐릭터 대화)
+
+→ 대화방 정보 조회 (CHAR_ROOM_SETTINGS)  
+→ 캐릭터 정보 조회 (CHAR_MODE_INFO)  
+→ 페르소나 정보 조회 (PERSONA)
+
 → king (왕 응답 생성)  
-→ scene (배경/상황 묘사)
+→ scene (상황/배경 생성)
 
 → 응답 반환  
-→ DB 저장 (ChatRoom, ChatMessage)  
+→ 메시지 저장 (CHAR_MESSAGES)  
+→ 상태 업데이트 (king_state 등)  
+
 → 사용자 출력  
 
 ---
 
 #### 🎭 시나리오 모드 (스토리 기반 다중 캐릭터)
-emotion (감정 분석)  
-→ intent (의도 분석)  
-→ retrieve (RAG 검색)  
+
+→ 대화방 정보 조회 (STORY_ROOM_SETTINGS)  
+→ 스토리 정보 조회 (STORY_MODE_INFO)  
+→ 등장인물 조회 (STORY_CHAR_INFO)
+
 → character (다중 캐릭터 응답 생성)  
-→ scene (스토리 진행 및 장면 묘사)
+→ scene (스토리 진행 및 장면 생성)
 
 → 응답 반환  
-→ DB 저장 (SceneRoom, SceneMessage)  
+→ 메시지 저장 (STORY_MESSAGES)  
+→ 상태 업데이트 (current_chapter, flags 등)
+
 → 사용자 출력  
+  
 ---
 
 ## 📋 5. 요구사항 정의서
