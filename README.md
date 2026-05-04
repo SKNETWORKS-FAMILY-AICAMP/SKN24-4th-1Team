@@ -36,15 +36,15 @@
   
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/03bb7129-01b8-41bc-8ce6-3f04fa8ede8f" />
+  https://www.mk.co.kr/news/it/11983531  
 </p>  
-https://www.mk.co.kr/news/it/11983531  
   
 최근 AI 챗봇 시장에서는 캐릭터 기반 서비스가 높은 이용률을 보이고 있다. 특히 캐릭터와의 대화를 중심으로 한 서비스가 높은 사용 시간을 기록하고 있다는 점은, 챗봇이 단순한 정보 검색 도구를 넘어 감정적 교감과 몰입형 경험을 제공하는 서비스로 확장되고 있음을 보여준다. 
   
 <p align="center">
   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/970130ec-a0fd-4372-b653-98e54ddf2eb1" />
-</p>  
-https://n.news.naver.com/article/006/0000135557?sid=103  
+  https://n.news.naver.com/article/006/0000135557?sid=103 
+</p>   
   
 또한 역사 드라마와 콘텐츠의 흥행은 특정 시대와 인물에 대한 대중의 관심을 높이는 요인으로 작용하고 있다. 조선시대와 역사 인물을 다룬 콘텐츠에 대한 관심은 관련 검색과 탐색으로 이어지고 있으며, 이는 사용자가 역사적 배경과 인물에 대해 더 깊이 알고자 하는 니즈가 존재함을 보여준다.
   
@@ -56,12 +56,12 @@ https://n.news.naver.com/article/006/0000135557?sid=103
 
   
 <p align="center">
-  <img width="548" height="348" alt="image" src="https://github.com/user-attachments/assets/75ffdb25-ab5f-4beb-bfba-248d19f8d47f" />
-  <img width="739" height="72" alt="image" src="https://github.com/user-attachments/assets/b6d1f37a-7614-4cee-a148-2760f35b0d53" />
+  <img src="https://github.com/user-attachments/assets/75ffdb25-ab5f-4beb-bfba-248d19f8d47f" width="500"/>
+  <img src="https://github.com/user-attachments/assets/b6d1f37a-7614-4cee-a148-2760f35b0d53" width="500"/>
+  https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050 
 </p>  
-https://contents.history.go.kr/front/hm/view.do?levelId=hm_074_0050  
   
-그러나 기존 역사 캐릭터 챗봇은 인물의 말투나 분위기를 자연스럽게 구현하는 데에는 강점이 있지만, 역사적 사실을 정확히 반영하는 데에는 한계가 있다. 예시 대화에서도 캐릭터는 자연스럽게 답변하지만, 실제 사료와 비교했을 때 역사적 오류가 포함될 수 있음을 확인할 수 있다.
+그러나 기존 역사 캐릭터 챗봇은 인물의 말투나 분위기를 자연스럽게 구현하는 데에는 강점이 있지만, 역사적 사실을 정확히 반영하는 데에는 한계가 있다. 예시 대화에서도 캐릭터는 자연스럽게 답변하지만, 실제 사료와 비교했을 때 역사적 오류가 포함될 수 있음을 확인할 수 있다.  
 오른쪽 자료는 질문한 내용에 대해 국사편찬위원회에서 제공하고 있는 역사 원문 및 해설로, 객관적인 사료를 기반으로 해당 정보가 실제 역사적 사실과 다름을 보여주는 근거 자료이다.  
 이는 현재의 캐릭터 챗봇이 몰입감 있는 대화 경험은 제공할 수 있으나, 정보의 정확성과 신뢰성 측면에서는 검증되지 않은 내용을 생성할 가능성이 있다는 문제를 드러낸다.  
   
