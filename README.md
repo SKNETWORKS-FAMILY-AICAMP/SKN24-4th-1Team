@@ -1,4 +1,4 @@
-# 👑 몽유록 (Mongyurok)
+<img width="1911" height="946" alt="image" src="https://github.com/user-attachments/assets/f411b581-684e-406c-8b68-2a183e42f3f3" /># 👑 몽유록 (Mongyurok)
 
 > 조선 왕과 대화하며 역사를 배우는 캐릭터형 AI 챗봇
 
@@ -194,11 +194,24 @@ Amazon RDS(MySQL)에 저장한다.
 
 ### 📌 주요 기능
 
-- 왕 캐릭터 선택  
-- 페르소나 설정  
+- 메인 화면(독대 모드 화면)
+<img width="1911" height="946" alt="image" src="https://github.com/user-attachments/assets/fa359559-7b02-4840-986e-1343e0d1831b" />
+<img width="1909" height="674" alt="image" src="https://github.com/user-attachments/assets/d4a32455-a10a-4bc4-8e4a-85d44ed27fd3" />
+
+- 독대 모드 캐릭터 상세보기
+
+- 스토리 모드 화면
+
+- 스토리 모드 상세보기
+  
+- 로그인
+  
+- 회원가입
+  
+- 페르소나 설정
+   
 - 실시간 채팅  
-- RAG 기반 답변  
-- 장면 묘사  
+
 
 ---
 
