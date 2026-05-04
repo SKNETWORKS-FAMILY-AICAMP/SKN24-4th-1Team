@@ -225,11 +225,11 @@ Amazon RDS(MySQL)에 저장한다.
 - 회원가입
 <img width="1915" height="946" alt="image" src="https://github.com/user-attachments/assets/d350567a-9753-46a3-b0aa-7ba098fea65c" />
   
-- 페르소나 설정
-
+- 페르소나 설정  
+<img width="795" height="888" alt="image" src="https://github.com/user-attachments/assets/3fb1fd88-3a6e-439e-b52d-d461947d11a5" />
    
 - 실시간 채팅  
-
+<img width="641" height="780" alt="image" src="https://github.com/user-attachments/assets/3b41ccd6-ffc2-49f3-967b-2189b2bbc589" />
 
 ---
 
