@@ -285,6 +285,7 @@ Amazon RDS(MySQL)에 저장한다.
 ### 💬 독대 모드 실시간 채팅
 <p align="center">
   <img src="https://github.com/user-attachments/assets/70d6c6d4-c77c-4752-8300-e5b101d9f1c8" width="400"/>
+  <br>
   <img src="https://github.com/user-attachments/assets/6773d00f-008f-4387-9aa0-d32b8bbf573e" width="400"/>
 </p>
 
@@ -307,7 +308,6 @@ Amazon RDS(MySQL)에 저장한다.
 - 비윤리적인 발언에 대한 제재 기능
 - 답변 길이 선택(짧게, 보통, 길게, 매우 길게) 기능
 - 페르소나 설정 글자수 제한 기능
-- 대화창에서의 글자수 제한 기능
 - 이미지 조회 페이지
   
 ---
